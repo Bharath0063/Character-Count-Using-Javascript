@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Character Count</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <h1>Real time character counter</h1>
+            <input type="text" placeholder="Please write your text here..." id="textInput"><br>
+            <h3 class="footer" id="foot">Total character:<span class="blue" id="total">0</span></h3></h3>
+            <h3 class="footer" id="foot1">Remaining character:<span id="remaining">50</span></h3>
+        </div>
+    </div>
+    <script>
+        const inputField = document.getElementById('textInput');
+        const total = document.getElementById('total');
+        const remaining = document.getElementById('remaining');
+        const maxLength = 50;
+
+        inputField.addEventListener('input', () => {
+            const textLength = inputField.value.length;
+            total.textContent = textLength;
+            remaining.textContent = maxLength - textLength;
+        });
+    </script>
+</body>
+</html>

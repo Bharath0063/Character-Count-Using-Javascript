@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.section{
+    justify-content: center;
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 50px;
+    background-color: pink;
+    height: 200px;
+    
+    
+}
+h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+input{
+    width: 450px;
+    height: 55px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: black;
+    border: none;
+}
+
+#foot{
+    float: left;
+    display: inline;
+    padding-left: 110px;
+}
+#foot1{
+    float: right;
+    padding-right: 110px;
+}
+span{
+    color: red;
+    font-size: 22px;
+    padding-left: 5px;
+}
+.blue{
+    color: blue;
+}
